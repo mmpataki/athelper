@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.madhusoodanpataki.athelper.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="New"
+            android:id="@+id/AddButton"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#456734"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Open"
+            android:id="@+id/OpenButton"
+            android:textSize="20sp"
+            android:textColor="#456734"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_alignTop="@+id/AddButton"
+            android:layout_toRightOf="@+id/AddButton"
+            android:layout_toEndOf="@+id/AddButton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Delete"
+            android:id="@+id/DeleteButton"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textColor="#456734"
+            android:clickable="true"
+            android:layout_alignTop="@+id/AddButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Choose one Attendance Sheet or Create one"
+        android:id="@+id/HeaderLabel" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AttendanceSheetList"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>
